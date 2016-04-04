@@ -1,0 +1,65 @@
+.login-form-container{
+    border-left: 3px solid #E38E4A;
+    border-right: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+    background-color: white;
+    padding: 1px 35px;
+}
+.login-form-container a{
+    color: #E38E4A;
+    font-weight: 400;
+}
+.login-form-container .btn-primary{
+    color: #ffffff;
+    background-color: #F27B21;
+    border: 1px solid #F27B21;
+}
+.login-form-container .btn-secondary{
+    color: #ffffff;
+    background-color: #595959;
+    border: 1px solid #595959;
+}
+.brand-container{
+    padding-top: 30px;
+}
+.brand-container h2{
+    text-align: right;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@media (min-width: 1200px){
+    .brand-spacer{
+        padding: 10% 0% 0% 40%;
+    }
+}
+@media (max-width: 991px) {
+    .login-form-container {
+        border: 1px solid #E2E2E2;
+    }
+
+    .brand-spacer {
+        padding: 0% 24%;
+    }
+
+    .brand-container h2 {
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .login-form-container .btn-primary {
+        color: #ffffff;
+        background-color: #231F20;
+        border: 1px solid #231F20;
+        width: 100%;
+    }
+
+    .social-container {
+        height: 100px;
+        background-color: #D9D9D9;
+        padding: 20px 35px;
+    }
+}
