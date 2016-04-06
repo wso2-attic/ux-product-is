@@ -49,6 +49,9 @@
 .social-container p{
     font-size: 1.3em;
 }
+.extended-form{
+    display: none;
+}
 @media (max-width: 767px){
     .data-container h3{
         font-size: 1.2em;
@@ -68,9 +71,7 @@
 @media (min-width: 991px){
     .login-form-wrapper{
         padding-top: 10%;
-    }
-    .data-container a{
-        margin: 0px !important;
+        padding-bottom: 5%;
     }
     .data-container h3{
         font-size: 1.5em;
@@ -85,6 +86,9 @@
 @media (max-width: 991px) {
     .data-container {
         border: 1px solid #E2E2E2;
+    }
+    .login-form-wrapper{
+        padding-bottom: 5%;
     }
     .brand-container h2 {
         margin-bottom: 10%;
