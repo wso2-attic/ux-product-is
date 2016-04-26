@@ -31,9 +31,13 @@
 .data-container .checkbox > input[type=checkbox]:not(:disabled) + .helper:before{
     border-width: 1px;
 }
+.spinner-container{
+    padding-top: 12px;
+}
 .brand-container{
     padding-top: 26px;
 }
+
 .brand-container h2{
     text-transform: uppercase;
     margin: 10px 0px;
@@ -55,26 +59,41 @@
 @media (max-width: 767px){
     .data-container h3{
         font-size: 1.2em;
+        margin-top: 10px;
     }
     .social-container p{
         font-size: 1em;
+    }
+    .spinner-container{
+        padding-top: 60px;
+    }
+    .spinner-container .spinner{
+        color: #A3A3A3;
     }
 }
 @media (max-width: 991px) and (min-width: 768px){
     .data-container h3{
         font-size: 1.2em;
+        margin-top: 10px;
+    }
+    .spinner-container{
+        padding-top: 60px;
+    }
+    .spinner-container .spinner{
+        color: #A3A3A3;
     }
     .social-container p{
         font-size: 1.2em;
     }
 }
 @media (min-width: 991px){
-    .login-form-wrapper{
+    .login-form-wrapper, .redirection-container{
         padding-top: 10%;
         padding-bottom: 5%;
     }
     .data-container h3{
         font-size: 1.5em;
+        margin-top: 10px;
     }
     .social-container{
         text-align: right;
@@ -87,7 +106,7 @@
     .data-container {
         border: 1px solid #E2E2E2;
     }
-    .login-form-wrapper{
+    .login-form-wrapper, .redirection-container{
         padding-bottom: 5%;
     }
     .brand-container h2 {
