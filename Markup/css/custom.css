@@ -63,6 +63,22 @@
 .extended-form{
     display: none;
 }
+
+.dark{
+    background-color: #231F20;
+    color: #fff;
+}
+.dark .data-container, .dark .error-details-container{
+    background-color: #2E2A2B;
+    border-right: 1px solid #3D393A;
+    border-bottom: 1px solid #3D393A;
+    border-top: 1px solid #3D393A;
+}
+.dark .input-group .form-control{
+    background-color: #242424;
+    border-color: #605E5F;
+}
+
 @media (max-width: 767px){
     .data-container h3{
         font-size: 1.2em;
@@ -88,6 +104,7 @@
         margin-bottom: 30px;
         font-size: 2em;
         font-weight: 400;
+        padding: 0px 20px;
     }
     .http-code span{
         text-transform: uppercase;
@@ -153,6 +170,11 @@
     .data-container, .error-details-container {
         border: 1px solid #E2E2E2;
     }
+    .dark .data-container, .dark .error-details-container{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
     .login-form-wrapper, .redirection-container, .error-container{
         padding-bottom: 5%;
     }
@@ -172,9 +194,16 @@
         border: 1px solid #231F20;
         width: 100%;
     }
+    .dark .data-container .btn-primary{
+        background-color: #F47B20;
+    }
     .social-container {
         background-color: #D9D9D9;
         padding: 20px 35px;
         text-align: left;
+    }
+    .dark .social-container{
+        background-color: #232323;
+        border-bottom:1px solid #3F3F3F;
     }
 }
