@@ -1,10 +1,13 @@
-.data-container{
+.data-container, .error-details-container{
     border-left: 3px solid #E38E4A;
     border-right: 1px solid #E2E2E2;
     border-bottom: 1px solid #E2E2E2;
     border-top: 1px solid #E2E2E2;
     background-color: white;
     padding: 10px 35px;
+}
+.error-details-container{
+    background-color: #E2E2E2;
 }
 .data-container form h3{
     margin-top: 10px;
@@ -14,12 +17,12 @@
     font-weight: 600;
     display: inline-block;
 }
-.data-container .btn-primary{
+.data-container .btn-primary, .error-details-container .btn-primary{
     color: #ffffff;
     background-color: #F27B21;
     border: 1px solid #F27B21;
 }
-.data-container .btn-secondary{
+.data-container .btn-secondary, .error-details-container .btn-secondary{
     color: #ffffff;
     background-color: #595959;
     border: 1px solid #595959;
@@ -53,6 +56,10 @@
 .social-container p{
     font-size: 1.3em;
 }
+
+.redirection-container h3{
+    font-weight: 400;
+}
 .extended-form{
     display: none;
 }
@@ -60,6 +67,9 @@
     .data-container h3{
         font-size: 1.2em;
         margin-top: 10px;
+    }
+    .data-container, .error-details-container {
+        padding:10px 10px;
     }
     .social-container p{
         font-size: 1em;
@@ -69,6 +79,20 @@
     }
     .spinner-container .spinner{
         color: #A3A3A3;
+    }
+    .redirection-container h3{
+        font-weight: 300;
+    }
+    .http-code {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .http-code span{
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 300;
     }
 }
 @media (max-width: 991px) and (min-width: 768px){
@@ -85,11 +109,29 @@
     .social-container p{
         font-size: 1.2em;
     }
+    .redirection-container h3{
+        font-weight: 300;
+    }
+    .http-code {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .http-code span{
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 300;
+    }
 }
 @media (min-width: 991px){
-    .login-form-wrapper, .redirection-container{
+    .login-form-wrapper, .redirection-container, .error-container{
         padding-top: 10%;
         padding-bottom: 5%;
+    }
+    .error-details-container h3{
+        font-weight: 400;
+        text-transform: uppercase;
     }
     .data-container h3{
         font-size: 1.5em;
@@ -101,13 +143,22 @@
     .social-container img{
         margin: 0px 0px 0px 5px;
     }
+    .http-code{
+        margin-top: 24px;
+        font-size: 4.5em;
+        font-weight: 400;
+    }
 }
 @media (max-width: 991px) {
-    .data-container {
+    .data-container, .error-details-container {
         border: 1px solid #E2E2E2;
     }
-    .login-form-wrapper, .redirection-container{
+    .login-form-wrapper, .redirection-container, .error-container{
         padding-bottom: 5%;
+    }
+    .error-details-container h3{
+        font-weight: 400;
+        text-transform: uppercase;
     }
     .brand-container h2 {
         margin-bottom: 10%;
