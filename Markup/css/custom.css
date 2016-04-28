@@ -17,6 +17,9 @@
     font-weight: 600;
     display: inline-block;
 }
+.data-container .btn-default, .error-details-container  .btn-default{
+    font-weight: 300;
+}
 .data-container .btn-primary, .error-details-container .btn-primary{
     color: #ffffff;
     background-color: #F27B21;
@@ -66,7 +69,7 @@
 
 .dark{
     background-color: #231F20;
-    color: #fff;
+    color: #B9B9B9;
 }
 .dark .data-container, .dark .error-details-container{
     background-color: #2E2A2B;
