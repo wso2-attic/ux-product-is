@@ -1,16 +1,19 @@
 .data-container, .error-details-container{
     border-left: 3px solid #E38E4A;
-    border-right: 1px solid #E2E2E2;
-    border-bottom: 1px solid #E2E2E2;
-    border-top: 1px solid #E2E2E2;
     background-color: white;
     padding: 10px 35px;
+}
+.redirection-container .data-container{
+    padding:17px 25px;
 }
 .error-details-container{
     background-color: #E2E2E2;
 }
 .data-container form h3{
     margin-top: 10px;
+}
+.signup-form-wrapper .data-container form h3, .recover-form-wrapper .data-container form h3{
+    font-weight: 400;
 }
 .data-container a, .login a{
     color: #E38E4A;
@@ -34,11 +37,15 @@
     background: #FFFFFF;
     color: #000;
 }
+.dark .data-container .checkbox > input[type=checkbox]:checked + .helper:after{
+    background: #242424;
+    color: #FFF;
+}
 .data-container .checkbox > input[type=checkbox]:not(:disabled) + .helper:before{
     border-width: 1px;
 }
 .spinner-container{
-    padding-top: 12px;
+    padding-top: 20px;
 }
 .brand-container{
     padding-top: 26px;
@@ -73,9 +80,6 @@
 }
 .dark .data-container, .dark .error-details-container{
     background-color: #2E2A2B;
-    border-right: 1px solid #3D393A;
-    border-bottom: 1px solid #3D393A;
-    border-top: 1px solid #3D393A;
 }
 .dark .input-group .form-control{
     background-color: #242424;
@@ -88,16 +92,14 @@
         margin-top: 10px;
     }
     .data-container, .error-details-container {
-        padding:10px 10px;
+        padding:20px 20px;
     }
     .social-container p{
         font-size: 1em;
     }
     .spinner-container{
         padding-top: 60px;
-    }
-    .spinner-container .spinner{
-        color: #A3A3A3;
+        padding-bottom: 20px;
     }
     .redirection-container h3{
         font-weight: 300;
@@ -115,6 +117,13 @@
         font-weight: 300;
     }
 }
+
+@media (max-width: 767px) and (orientation:landscape){
+    .brand-container{
+        padding: 26px 130px 0px 130px;
+    }
+}
+
 @media (max-width: 991px) and (min-width: 768px){
     .data-container h3{
         font-size: 1.2em;
@@ -122,9 +131,7 @@
     }
     .spinner-container{
         padding-top: 60px;
-    }
-    .spinner-container .spinner{
-        color: #A3A3A3;
+        padding-bottom: 20px;
     }
     .social-container p{
         font-size: 1.2em;
@@ -145,7 +152,7 @@
     }
 }
 @media (min-width: 991px){
-    .login-form-wrapper, .redirection-container, .error-container{
+    .login-form-wrapper, .redirection-container, .error-container, .signup-form-wrapper, .recover-form-wrapper{
         padding-top: 10%;
         padding-bottom: 5%;
     }
@@ -174,9 +181,7 @@
         border: 1px solid #E2E2E2;
     }
     .dark .data-container, .dark .error-details-container{
-        border-top: none;
-        border-right: none;
-        border-left: none;
+        border:none;
     }
     .login-form-wrapper, .redirection-container, .error-container{
         padding-bottom: 5%;

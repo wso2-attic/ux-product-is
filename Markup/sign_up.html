@@ -38,11 +38,10 @@
 </head>
 <body>
 
-
 <div class="page-content-wrapper">
     <div class="container-fluid ">
         <div class="container">
-            <div class="login-form-wrapper">
+            <div class="signup-form-wrapper">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                         <div class="brand-container add-margin-bottom-5x">
@@ -57,122 +56,73 @@
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 login">
                         <div class="data-container">
                             <form class="form-horizontal">
-                                <h3>Create your Account</h3>
-                                <div class="form-group">
+                                <h3>Create account</h3>
+                                <p>Please fill in the below form to create an account</p>
+                                <div class="form-group add-margin-top-5x">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <label class="control-label">Username *</label>
-                                        <div class="input-group input-wrap">
-                                            <input type="text" class="form-control" placeholder="e.g JohnDoe">
-                                        </div>
+                                        <label for="input-name" class="control-label">Username:</label>
+                                        <input type="text" class="form-control" id="input-name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <label class="control-label">Password *</label>
-                                        <div class="input-group input-wrap">
-                                            <input type="password" class="form-control" placeholder="Password">
-                                        </div>
+                                        <label for="input-pass" class="control-label">Password:</label>
+                                        <input type="password" class="form-control" id="input-pass">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                        <label for="input-confirm-pass" class="control-label">Confirm Password:</label>
+                                        <input type="password" class="form-control" id="input-confirm-pass">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <label class="control-label">Re-type Password *</label>
-                                        <div class="input-group input-wrap">
-                                            <input type="password" class="form-control" placeholder="Password">
-                                        </div>
+                                        <label for="input-name" class="control-label">First Name:</label>
+                                        <input type="text" class="form-control" id="input-name">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                        <label for="input-name" class="control-label">Last Name:</label>
+                                        <input type="text" class="form-control" id="input-name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <label class="control-label">Fisrt Name *</label>
-                                        <div class="input-group input-wrap">
-                                            <input type="text" class="form-control" placeholder="e.g John">
-                                        </div>
+                                        <label for="input-name" class="control-label">Email:</label>
+                                        <input type="email" class="form-control" id="input-name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <label class="control-label">Last Name *</label>
-                                        <div class="input-group input-wrap">
-                                            <input type="text" class="form-control" placeholder="e.g Doe">
-                                        </div>
+                                        <label for="input-name" class="control-label">Security Question:</label>
+                                        <select id="" class="form-control">
+                                            <option>Please select a security question</option>
+                                            <option>Question 1</option>
+                                            <option>Question 2</option>
+                                            <option>Question 3</option>
+                                            <option>Question 4</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <label class="control-label">Email *</label>
-                                        <div class="input-group input-wrap">
-                                            <input type="text" class="form-control" placeholder="e.g JohnDoe@gmail.com">
-                                        </div>
+                                        <label for="input-sec-answer" class="control-label">Answer:</label>
+                                        <input type="email" class="form-control" id="input-sec-answer">
                                     </div>
                                 </div>
-                                <a class="add-margin-bottom-4x sign-up-additional">View Additional Details</a>
-                                <div class="extended-form">
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">Organization </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g WSO2 Inc">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">Address </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g PO BOX 1022 SEATTLE WA 98104 USA">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">Country </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g USA">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">Land Phone </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g 234-235-5678">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">Mobile Phone </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g 12481234567">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">IM </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g JohnDoeSkype">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                            <label class="control-label">URL </label>
-                                            <div class="input-group input-wrap">
-                                                <input type="text" class="form-control" placeholder="e.g JohnDoeUSA.com">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
+                                <div class="form-group add-margin-top-5x">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                        <button type="submit" class="btn btn-default btn-primary add-margin-right-2x">Sign Up</button>
+                                        <button type="submit" class="btn btn-default btn-primary add-margin-right-2x">Next</button>
+                                        <button type="submit" class="btn btn-default btn-secondary hidden-xs hidden-sm">Cancel</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
+                        <div class="social-container visible-sm visible-xs">
+                            <p>Also sign in with</p>
+                            <a href=""><img class="img-responsive" src="images/googleplus.jpg"></a>
+                            <a href=""><img class="img-responsive" src="images/twitter.jpg"></a>
+                            <a href=""><img class="img-responsive" src="images/facebook.jpg"></a>
+                        </div>
+                        <p class="visible-xs visible-sm add-margin-2x text-center">Don't have an account? <a href="#">Register Now</a></p>
                     </div>
                 </div>
             </div>
