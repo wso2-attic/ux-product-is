@@ -85,6 +85,24 @@
     background-color: #242424;
     border-color: #605E5F;
 }
+.form-horizontal{
+    max-width: 100% !important;
+}
+.recover-option-container{
+    background-color: #F3F3F3;
+    padding: 20px;
+    margin-top: 15px;
+    display: none;
+}
+
+
+/**** Theme Overrides ****/
+.radio > input[type=radio]:not(:disabled) + .helper:before {
+    border-color: #F27D1D;
+}
+.radio > input[type=radio]:checked + .helper:after {
+    background-color: #F27D1D;
+}
 
 @media (max-width: 767px){
     .data-container h3{

@@ -10,6 +10,13 @@ $(window).load(function(){
 		$(this).parent().find('.image-container .after').hide();
 	})
 
+    $('input[name=recover-option]').click(function(){
+        if($(this).parent().parent().find('.recover-option-container').is(':hidden')){
+            $('.recover-option-container').slideUp();
+            $(this).parent().parent().find('.recover-option-container').slideDown();
+        }
+    })
+
 
 	$('.rating:not(.half) .icon').click(function(){
         var elem = $(this);
