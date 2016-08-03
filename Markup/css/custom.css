@@ -81,9 +81,13 @@
 .dark .data-container, .dark .error-details-container{
     background-color: #2E2A2B;
 }
+.dark .recover-option-container{
+    background-color: #332F30;
+}
 .dark .input-group .form-control{
     background-color: #242424;
     border-color: #605E5F;
+    color: #F3F3F3;
 }
 .form-horizontal{
     max-width: 100% !important;
