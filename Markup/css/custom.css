@@ -1,5 +1,5 @@
 .data-container, .error-details-container{
-    border-left: 3px solid #E38E4A;
+    border-left: 3px solid #F27B21;
     background-color: white;
     padding: 10px 35px;
 }
@@ -16,7 +16,7 @@
     font-weight: 400;
 }
 .data-container a, .login a{
-    color: #E38E4A;
+    color: #F27B21;
     font-weight: 600;
     display: inline-block;
 }
@@ -236,4 +236,24 @@
         background-color: #232323;
         border-bottom:1px solid #3F3F3F;
     }
+}
+.dark input {
+    background-color: #242424;
+    border-color: #605E5F;
+    color: #F3F3F3;
+}
+body {
+    background-color: #efefef;
+}
+.username-text, .question-no {
+    color:#555;
+}
+.dark .username-text, .dark .question-no {
+    color:#eee;
+}
+.recover-option-container hr{
+    border: 1px solid #fff;
+}
+.dark .recover-option-container hr{
+    border: 1px solid #2E2A2B;
 }

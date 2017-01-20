@@ -79,4 +79,30 @@ $(window).load(function(){
         }
     })
 
+    /* This code is for the demo purpose of last question section*/
+    $('.next').click(function(){
+        $('.wizard-container').html(
+            '<div class="form-group">'+
+                '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">'+
+                    '<label class="control-label question-no"><b>5 of 5 Questions</b></label>'+
+                '</div>'+
+            '</div>'+
+            '<div class="form-group">'+
+                '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">'+
+                    '<label class="control-label">Question</label>'+
+                    '<p class="add-margin-top-1x">What is the name of your office?</p>'+
+                '</div>'+
+                '<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">'+
+                    '<label for="input-sec-question" class="control-label">Answer</label>'+
+                    '<input type="text" class="form-control" id="input-sec-question">'+
+                '</div>'+
+            '</div>'+
+            '<div class="form-group add-margin-top-5x">'+
+                '<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">'+
+                    '<button type="submit" class="btn btn-primary add-margin-right-2x">Recover</button>'+
+                    '<button type="submit" class="btn btn-secondary hidden-xs hidden-sm">Cancel</button>'+
+                '</div>'+
+            '</div>')
+    });
+
 });
