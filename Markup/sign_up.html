@@ -26,7 +26,7 @@
     <!-- Font WSO2 CSS -->
     <link href="libs/font-wso2_1.0.0/css/font-wso2.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme WSO2 CSS -->
-    <link href="libs/theme-wso2_1.0/css/theme-wso2.css" rel="stylesheet" type="text/css" />
+    <link href="libs/theme-wso2-2.0.0/css/theme-wso2.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +36,7 @@
     <script src="libs/respond_1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="sticky-footer">
 
 <div class="page-content-wrapper">
     <div class="container">
@@ -55,43 +55,43 @@
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 login">
                     <div class="data-container">
                         <form class="form-horizontal">
-                            <h3>Create account</h3>
-                            <p>Please fill in the below form to create an account</p>
+                            <h3>Sign up</h3>
+                            <p>Please fill in the below form to sign up</p>
                             <div class="form-group add-margin-top-5x">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-name" class="control-label">Username:</label>
-                                    <input type="text" class="form-control" id="input-name">
+                                    <label for="input-name" class="control-label">Username<span>*</span></label>
+                                    <input type="text" class="form-control" id="input-name" placeholder="e.g. johndoe">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-pass" class="control-label">Password:</label>
+                                    <label for="input-pass" class="control-label">Password<span>*</span></label>
                                     <input type="password" class="form-control" id="input-pass">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-confirm-pass" class="control-label">Confirm Password:</label>
+                                    <label for="input-confirm-pass" class="control-label">Confirm Password<span>*</span></label>
                                     <input type="password" class="form-control" id="input-confirm-pass">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-first-name" class="control-label">First Name:</label>
-                                    <input type="text" class="form-control" id="input-first-name">
+                                    <label for="input-first-name" class="control-label">First Name<span>*</span></label>
+                                    <input type="text" class="form-control" id="input-first-name" placeholder="e.g. John">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-last-name" class="control-label">Last Name:</label>
-                                    <input type="text" class="form-control" id="input-last-name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-email" class="control-label">Email:</label>
-                                    <input type="email" class="form-control" id="input-email">
+                                    <label for="input-last-name" class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" id="input-last-name" placeholder="e.g. Doe">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-sec-questions" class="control-label">Security Question:</label>
+                                    <label for="input-email" class="control-label">Email<span>*</span></label>
+                                    <input type="email" class="form-control" id="input-email" placeholder="e.g. user@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                    <label for="input-sec-questions" class="control-label">Security Question</label>
                                     <select id="input-sec-questions" class="form-control">
                                         <option>Please select a security question</option>
                                         <option>Question 1</option>
@@ -103,16 +103,16 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-sec-answer" class="control-label">Answer:</label>
+                                    <label for="input-sec-answer" class="control-label">Answer</label>
                                     <input type="email" class="form-control" id="input-sec-answer">
                                 </div>
                             </div>
                             <div class="form-group add-margin-top-5x">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <button type="submit" class="btn btn-default btn-primary add-margin-right-2x">Next</button>
-                                    <button type="submit" class="btn btn-default btn-secondary hidden-xs hidden-sm">Cancel</button>
+                                    <button type="submit" class="btn btn-default btn-primary add-margin-right-2x">Sign up</button>
                                 </div>
                             </div>
+                            <p class="hidden-xs hidden-sm">Already have an account? <a href="login.html">Sign in</a></p>
                         </form>
                     </div>
                     <div class="social-container visible-sm visible-xs">
@@ -121,7 +121,7 @@
                         <a href=""><img class="img-responsive" src="images/twitter.jpg"></a>
                         <a href=""><img class="img-responsive" src="images/facebook.jpg"></a>
                     </div>
-                    <p class="visible-xs visible-sm add-margin-2x text-center">Don't have an account? <a href="#">Register Now</a></p>
+                    <p class="visible-xs visible-sm add-margin-2x text-center">Already have an account? <a href="login.html">Sign in</a></p>
                 </div>
             </div>
         </div>

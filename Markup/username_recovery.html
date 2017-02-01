@@ -26,7 +26,7 @@
     <!-- Font WSO2 CSS -->
     <link href="libs/font-wso2_1.0.0/css/font-wso2.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme WSO2 CSS -->
-    <link href="libs/theme-wso2_1.0/css/theme-wso2.css" rel="stylesheet" type="text/css" />
+    <link href="libs/theme-wso2-2.0.0/css/theme-wso2.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +36,7 @@
     <script src="libs/respond_1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="sticky-footer">
 
 <div class="page-content-wrapper">
     <div class="container">
@@ -59,24 +59,25 @@
                             <p>Please fill in the below form to recover your username</p>
                             <div class="form-group add-margin-top-5x">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-first-name" class="control-label">First Name:</label>
-                                    <input type="text" class="form-control" id="input-first-name">
+                                    <label for="input-first-name" class="control-label">First Name</label>
+                                    <input type="text" class="form-control" id="input-first-name" placeholder="e.g. John">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-last-name" class="control-label">Last Name:</label>
-                                    <input type="text" class="form-control" id="input-last-name">
+                                    <label for="input-last-name" class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" id="input-last-name" placeholder="e.g. Doe">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    <label for="input-email" class="control-label">Email:</label>
-                                    <input type="email" class="form-control" id="input-email">
+                                    <label for="input-email" class="control-label">Email</label>
+                                    <input type="email" class="form-control" id="input-email" placeholder="e.g. user@example.com">
                                 </div>
                             </div>
                             <div class="form-group add-margin-top-5x">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                     <button type="submit" class="btn btn-default btn-primary add-margin-right-2x">Recover</button>
-                                    <button type="submit" class="btn btn-default btn-secondary hidden-xs hidden-sm">Cancel</button>
+                                    <a href="login.html" class="hidden-xs hidden-sm">Back to sign in</a>
+                                    <a href="login.html" class="visible-xs visible-sm add-margin-2x text-center">Back to sign in</a>
                                 </div>
                             </div>
                         </form>
