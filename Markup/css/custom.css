@@ -16,8 +16,6 @@
     font-weight: 400;
 }
 .data-container a, .login a{
-    color: #F27B21;
-    font-weight: 600;
     display: inline-block;
 }
 .data-container .btn-default, .error-details-container  .btn-default{
@@ -92,13 +90,21 @@
 .form-horizontal{
     max-width: 100% !important;
 }
-.recover-option-container{
-    background-color: #F3F3F3;
-    padding: 20px;
-    margin-top: 15px;
+.recover-option-container {
     display: none;
 }
-
+.recover-option-container.email-recovery-only{
+    display: block;
+    margin-top:0;
+    background-color: transparent;
+    padding: 0;
+}
+.recover-option-container.security-question-recovery-only{
+    display: block;
+    margin-top:0;
+    background-color: transparent;
+    padding: 10px 0;
+}
 
 /**** Theme Overrides ****/
 .radio > input[type=radio]:not(:disabled) + .helper:before {
@@ -220,8 +226,6 @@
     }
     .data-container .btn-primary {
         color: #ffffff;
-        background-color: #231F20;
-        border: 1px solid #231F20;
         width: 100%;
     }
     .dark .data-container .btn-primary{
@@ -252,7 +256,7 @@ body {
     color:#eee;
 }
 .recover-option-container hr{
-    border: 1px solid #fff;
+    border: 1px solid #eee;
 }
 .dark .recover-option-container hr{
     border: 1px solid #2E2A2B;

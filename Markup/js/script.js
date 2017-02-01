@@ -11,10 +11,8 @@ $(window).load(function(){
 	})
 
     $('input[name=recover-option]').click(function(){
-        if($(this).parent().parent().find('.recover-option-container').is(':hidden')){
-            $('.recover-option-container').slideUp();
-            $(this).parent().parent().find('.recover-option-container').slideDown();
-        }
+        $('.recover-option-container').hide();
+        $('.'+$(this).val()).closest('.recover-option-container').fadeIn();
     })
 
 
@@ -100,7 +98,7 @@ $(window).load(function(){
             '<div class="form-group add-margin-top-5x">'+
                 '<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">'+
                     '<button type="submit" class="btn btn-primary add-margin-right-2x">Recover</button>'+
-                    '<button type="submit" class="btn btn-secondary hidden-xs hidden-sm">Cancel</button>'+
+                    '<a href="login.html" class="hidden-xs hidden-sm">Back to sign in</a>'+
                 '</div>'+
             '</div>')
     });
