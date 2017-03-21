@@ -231,6 +231,9 @@
         background-color: #232323;
         border-bottom:1px solid #3F3F3F;
     }
+    .message-container {
+        text-align: center;
+    }
 }
 .dark input {
     background-color: #242424;
@@ -251,4 +254,12 @@ body {
 }
 .dark .recover-option-container hr{
     border: 1px solid #2E2A2B;
+}
+
+.message-text {
+    font-size: 22px;
+    font-weight: 400;
+}
+.message-container .text-success {
+    color: #27ae60;
 }
