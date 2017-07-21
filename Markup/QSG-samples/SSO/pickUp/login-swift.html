@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+~ Copyright (c) 2017 WSO2 Inc. (http://wso2.com) All Rights Reserved.
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~ http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Swift Login">
+
+    <title>Login | PickUp Swift</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="libs/bootstrap_3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="libs/font-awesome_4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv_3.7.0/html5shiv.js"></script>
+    <script src="libs/respond_1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="login-swift">
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="form-wrap-header">
+                        <img src="img/logo.png" class="center-block pickup-logo-login" alt="pickup-logo" />
+                        <span class="app-title center-block">Swift</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="form-wrap">
+                        <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="key" class="sr-only">Password</label>
+                                <input type="password" name="key" id="key" class="form-control" placeholder="Password">
+                            </div>
+                            <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block pickup-primary-bg add-margin-top-4x" value="Sign In">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="login-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="text-muted">Copyright &copy;  <a href="http://wso2.com/" target="_blank" class="wso2-logo-link"><img src="img/wso2-light.svg" class="wso2-logo" alt="wso2-logo" /></a> &nbsp;2017</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="libs/jquery_1.11.1/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="libs/bootstrap_3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
