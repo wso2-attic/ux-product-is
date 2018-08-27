@@ -32,7 +32,7 @@ a.btn-login:hover, a.btn-login:active, a.btn-login:focus {
     border: 0.25rem solid #d4dce4;
 }
 
-.app-icon i {
+.app-icon > i {
     color: #5663ab;
 }
 
@@ -86,11 +86,6 @@ a.btn-login:hover, a.btn-login:active, a.btn-login:focus {
 }
 
 /* Profile page */
-
-.user-icon i {
-    color: #c3c3c3;
-    padding-bottom: 1.2rem;
-}
 
 .btn-details {
     color: #3f51b5;

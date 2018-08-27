@@ -36,7 +36,7 @@ a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
     border: 0.25rem solid #d4dce4;
 }
 
-.app-icon i {
+.app-icon > i {
     color: #ff7851;
 }
 
@@ -79,11 +79,6 @@ a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
 }
 
 /* Profile page */
-
-.user-icon i {
-    color: #c3c3c3;
-    padding-bottom: 2rem;
-}
 
 .btn-details {
     color: #fc511f;

@@ -142,6 +142,11 @@ a.btn-login:hover {
 
 /* Profile */
 
+.user-icon > i {
+    color: #c3c3c3;
+    padding-bottom: 2rem;
+}
+
 .profile .jumbotron-heading {
     font-size: 1.2rem;
 }
