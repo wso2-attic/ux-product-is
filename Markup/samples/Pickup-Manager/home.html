@@ -63,7 +63,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="toggleView" href="#">
+                    <a class="nav-link" id="toggleView" href="#" data-toggle="tooltip" data-placement="bottom" title="Console">
                         <i class="fa fa-cogs"></i>
                     </a>
                 </li>
@@ -86,8 +86,10 @@
                             <nav>
                                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-overview-tab" data-toggle="tab"
-                                       href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</a>
-                                    <a class="nav-item nav-link" id="nav-drivers-tab" data-toggle="tab" href="#nav-drivers"
+                                       href="#nav-overview" role="tab" aria-controls="nav-overview"
+                                       aria-selected="true">Overview</a>
+                                    <a class="nav-item nav-link" id="nav-drivers-tab" data-toggle="tab"
+                                       href="#nav-drivers"
                                        role="tab" aria-controls="nav-drivers" aria-selected="false">Drivers</a>
                                     <a class="nav-item nav-link" id="nav-vehicles-tab" data-toggle="tab"
                                        href="#nav-vehicles"
@@ -401,21 +403,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 console-headers">
-                    <button id="console-close" type="button" class="btn btn-secondary float-right">
-                        <i class="fas fa-window-close"></i>
-                    </button>
-                    <button id="toggleLayout" type="button" class="btn btn-secondary float-right">
-                        <i class="fas fa-columns"></i>
-                    </button>
-
+                    <span id="console-close" class="float-right console-action">
+                        <span data-toggle="tooltip" data-placement="bottom" title="Close"><i
+                                class="fas fa-times"></i></span>
+                    </span>
+                    <span id="toggleLayout" class="float-right console-action">
+                        <span data-toggle="tooltip" data-placement="bottom" title="Dock to bottom"><i
+                                class="fas fa-window-maximize"></i></span>
+                    </span>
+                    <span id="clearAll" class="float-right console-action">
+                        <span data-toggle="tooltip" data-placement="bottom" title="Clear All"><i class="fas fa-ban"></i></span>
+                    </span>
                 </div>
                 <div class="col-md-12">
-                    <div class="view-actions clearfix pt-3">
-                        <button id="clearAll" type="button" class="btn btn-outline-secondary float-right">
-                            Clear All
-                        </button>
-
-                    </div>
                     <div id="timeline-content">
                         <ul class="timeline">
                             <li class="event sent">
