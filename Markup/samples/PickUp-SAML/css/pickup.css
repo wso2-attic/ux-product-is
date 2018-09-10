@@ -49,6 +49,11 @@ a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
     color: #ff7851;
 }
 
+.pickup .login-img {
+    height: 5rem;
+    padding-left: 0;
+}
+
 /* Home page */
 
 .app-navbar {
