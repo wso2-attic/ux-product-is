@@ -105,27 +105,81 @@
                                 </div>
                                 <div class="tab-pane fade" id="nav-rides" role="tabpanel"
                                      aria-labelledby="nav-rides-tab">
-                                    <div class="col-sm-9 col-md-4 col-lg-4 mx-auto">
+                                    <div class="col-md-12 col-lg-8 mx-auto">
                                         <div class="ride-content">
-                                            <div class="no-rides-msg text-secondary">
+                                            <div class="no-rides-msg text-secondary text-center mt-4 mb-2">
                                                 <i class="fas fa-info-circle"></i> Could not find any registered
                                                 rides.
                                             </div>
-                                            <div class="rides text-center">
-                                                <div class="row">
-                                                    <div class="col-md-6 text-md-right">
+                                            <div class="rides">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-3 text-md-right mt-1 mt-md-3">
                                                         <img src="img/driver.png" class="driver mt-3">
                                                     </div>
-                                                    <div class="col-md-6 mt-1 mt-md-5 text-md-left">
+                                                    <div class="col-md-3 mt-1 mt-md-5 text-md-left">
                                                         <div class="driver-name">Tiger Nixon</div>
                                                         <div class="driver-vehicle text-secondary">CAS 234</div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12 mt-5">
+                                                    <div class="col-md-6 mt-md-5 ">
+                                                        <button type="button" class="btn btn-outline-primary share">
+                                                            Share my ride
+                                                        </button>
                                                         <button type="button" class="btn btn-outline-secondary cancel">
                                                             Cancel
                                                         </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 d-block mx-auto">
+                                                        <div id="response" class="mt-2"></div>
+                                                        <div class="loading-icon fa-3x text-center"><i
+                                                                class="fas fa-spinner fa-spin"></i></div>
+                                                    </div>
+                                                </div>
+                                                <hr/>
+                                            </div>
+                                            <div class="past-rides">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="pickup-heading pickup-heading pt-4 pb-3">PAST
+                                                            RIDES
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table past-rides-table">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="date-time"></td>
+                                                                    <td>Joshua Winters</td>
+                                                                    <td>JDQ 887</td>
+                                                                    <td>Car</td>
+                                                                    <td><a href="#" data-toggle="modal"
+                                                                           data-target="#sampleModal"
+                                                                           class="pickup-route"><i
+                                                                            class="fas fa-route"></i> ROUTE</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="date-time"></td>
+                                                                    <td>Lucas Thiyago</td>
+                                                                    <td>KNW 456</td>
+                                                                    <td>Van</td>
+                                                                    <td><a href="#" data-toggle="modal"
+                                                                           data-target="#sampleModal"
+                                                                           class="pickup-route"><i
+                                                                            class="fas fa-route"></i> ROUTE</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="date-time"></td>
+                                                                    <td>Woo Jin</td>
+                                                                    <td>HGY 423</td>
+                                                                    <td>Car</td>
+                                                                    <td><a href="#" data-toggle="modal"
+                                                                           data-target="#sampleModal"
+                                                                           class="pickup-route"><i
+                                                                            class="fas fa-route"></i> ROUTE</a></td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -136,12 +190,6 @@
                         </div>
                     </div>
                 </section>
-                <div class="row">
-                    <div class="col-md-5 d-block mx-auto">
-                        <div id="response"></div>
-                        <div class="loading-icon fa-3x text-center"><i class="fas fa-spinner fa-spin"></i></div>
-                    </div>
-                </div>
             </div>
         </div>
         <div id="profile-content">

@@ -17,7 +17,7 @@
 
 var driverRequest;
 
-$.getJSON( "./mocks/driverRequestData.json", function( data ) {
+$.getJSON( "./mocks/shareRequestData.json", function( data ) {
     driverRequest = $.parseJSON(JSON.stringify(data, null, 4));
 });
 
@@ -54,7 +54,7 @@ function shareRide(){
         $('.rides').show();
         $('<div class="alert alert-success">' +
             '<button type="button" class="close" data-dismiss="alert">' +
-            '&times;</button> You have successfully booked your ride.&nbsp;&nbsp; </div>').hide().appendTo('#response').fadeIn(300);
+            '&times;</button> You have successfully shared your ride.&nbsp;&nbsp; </div>').hide().appendTo('#response').fadeIn(300);
 
         $(".app-home .alert").delay(3000).fadeOut( "normal", function(){
             $(this).remove();
@@ -67,7 +67,7 @@ function shareRide(){
 }
 
 
-$(".book-btn").on("click",function(){
+$(".share").on("click",function(){
     shareRide();
 });
 

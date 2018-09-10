@@ -18,9 +18,14 @@ $(document).ready(function () {
 
     $('.rides').hide();
 
+    $('.book-btn').on('click', function(){
+        $('.nav-tabs a[href="#nav-rides"]').tab('show');
+        $('.no-rides-msg').hide();
+        $('.rides').show();
+    });
+
     $('.cancel').on('click', function(){
         $('.rides').hide();
-        $('#response').hide();
         $('.no-rides-msg').show();
     });
 

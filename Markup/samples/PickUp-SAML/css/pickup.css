@@ -84,15 +84,15 @@ a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
 }
 
 .driver-name {
-    font-size: 18px
+    font-size: 1.125rem;
 }
 
 .driver-vehicle {
-    font-size: 14px;
+    font-size:  0.875rem;
 }
 
 .driver {
-    height: 6rem;
+    height: 5rem;
 }
 
 .btn-outline-primary.focus, .btn-outline-primary:focus {
@@ -101,6 +101,22 @@ a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
 
 .pickup .hljs-string, pickup .hljs-symbol, pickup .hljs-bullet {
     color: #fc511f;
+}
+
+.pickup-heading {
+    color: #666;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.past-rides-table {
+    color: #555;
+    font-size: 0.875rem;
+}
+
+.pickup-route {
+    color: #fc511f;
+    font-size: 0.75rem
 }
 
 /* Profile page */

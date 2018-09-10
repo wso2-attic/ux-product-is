@@ -16,7 +16,7 @@
 
 $.mockjax({
     url: "/restful/testbackend",
-    proxy: './mocks/driverData.json',
+    proxy: './mocks/shareData.json',
     status: 210,
     responseTime: 5000,
     responseText: {
