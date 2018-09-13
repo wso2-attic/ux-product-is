@@ -15,6 +15,9 @@
  */
 
 $(document).ready(function () {
+
+    var $mainContent = $("#main-content");
+
     $(".date-time").each(function (index) {
         var randomDateTime = randomDate(new Date(2018, 0, 1), new Date());
         $(this).text(moment(randomDateTime).format('DD/MM/YYYY hh:mm A'));
@@ -25,12 +28,12 @@ $(document).ready(function () {
     $("#profile-content").hide();
 
     $("#back-home").click(function () {
-        $("#main-content").show();
+        $mainContent.show();
         $("#profile-content").hide();
     });
 
     $("#profile").click(function () {
-        $("#main-content").hide();
+        $mainContent.hide();
         $("#profile-content").show();
     });
 });
@@ -94,6 +97,8 @@ var config = {
     }]
 };
 
+var $toggleView = $("#toggleView");
+
 var myLayout = new GoldenLayout(config, '#wrapper');
 
 myLayout.registerComponent('actionContainer', function (container, componentState) {
@@ -113,6 +118,7 @@ var toggleRowColumn = function () {
             content: []
         });
 
+    var $toggleLayout = $('#toggleLayout');
     //Prevent it from re-initialising any child items
     newElement.isInitialised = true;
 
@@ -125,11 +131,11 @@ var toggleRowColumn = function () {
     var viewContainer = myLayout.root.contentItems[0].contentItems[1];
 
     if (newElement.isColumn) {
-        $('#toggleLayout').html('<span data-toggle="tooltip" data-placement="bottom" title="Dock to right">' +
+        $toggleLayout.html('<span data-toggle="tooltip" data-placement="bottom" title="Dock to right">' +
             '<i class="fas fa-columns" ></i></span>');
         columnLayout(actionContainer, viewContainer);
     } else {
-        $('#toggleLayout').html('<span data-toggle="tooltip" data-placement="bottom" title="Dock to bottom">' +
+        $toggleLayout.html('<span data-toggle="tooltip" data-placement="bottom" title="Dock to bottom">' +
             '<i class="fas fa-window-maximize"></i></span>');
         rowLayout(actionContainer, viewContainer);
     }
@@ -141,11 +147,11 @@ $('.request-response-title').on("click", function (e) {
     var display = $(this).next().css('display');
     $(this).next().slideToggle();
     if (display == "block") {
-        $(this).children().children("i").removeClass("fa-angle-right");
-        $(this).children().children("i").addClass("fa-angle-down");
+        $(this).find("i").removeClass("fa-angle-right");
+        $(this).find("i").addClass("fa-angle-down");
     } else {
-        $(this).children().children("i").removeClass("fa-angle-down")
-        $(this).children().children("i").addClass("fa-angle-right");
+        $(this).find("i").removeClass("fa-angle-down");
+        $(this).find("i").addClass("fa-angle-right");
     }
 });
 
@@ -173,7 +179,7 @@ function toggleConsole() {
     if (viewContainer.config.width == 0) {
         rowLayout(actionContainer, viewContainer);
         $('#wrapper .lm_splitter').show();
-        $("#toggleView").addClass("active");
+        $toggleView.addClass("active");
 
     } else if (viewContainer.config.width == 100) {
         if (viewContainer.config.height < 100) {
@@ -181,11 +187,11 @@ function toggleConsole() {
         }
         defaultLayout(actionContainer, viewContainer);
         $('#wrapper .lm_splitter').hide();
-        $("#toggleView").removeClass("active");
+        $toggleView.removeClass("active");
     }
     else {
         defaultLayout(actionContainer, viewContainer);
-        $("#toggleView").removeClass("active");
+        $toggleView.removeClass("active");
     }
 
     myLayout.updateSize();

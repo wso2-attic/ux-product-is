@@ -203,7 +203,7 @@ a.btn-login:hover {
     border-left: 0.25rem solid #666;
     line-height: 1rem;
     margin-top: 2rem;
-    padding: 0rem;
+    padding: 0;
     list-style: none;
     text-align: left;
     border-radius: 0.5rem;

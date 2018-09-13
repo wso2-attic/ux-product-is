@@ -16,17 +16,21 @@
 
 $(document).ready(function () {
 
+    var $noRideMsg = $('.no-rides-msg');
+
     $('.rides').hide();
 
     $('.book-btn').on('click', function(){
         $('.nav-tabs a[href="#nav-rides"]').tab('show');
-        $('.no-rides-msg').hide();
+        $noRideMsg.hide();
         $('.rides').show();
+        $('.action-response').hide();
     });
 
     $('.cancel').on('click', function(){
         $('.rides').hide();
-        $('.no-rides-msg').show();
+        $('.action-response').hide();
+        $noRideMsg.show();
     });
 
 });

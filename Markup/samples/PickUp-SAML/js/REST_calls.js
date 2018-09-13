@@ -23,6 +23,8 @@ $.getJSON( "./mocks/shareRequestData.json", function( data ) {
 
 function shareRide(){
 
+    var $timeline = $("#timeline-content");
+
     var request = $.ajax({
         url: "/restful/testbackend",
         method: "GET",
@@ -32,33 +34,27 @@ function shareRide(){
         beforeSend: function( xhr ) {
             xhr.setRequestHeader('Authorization', 'Bearer');
             var jsonStr = JSON.stringify(driverRequest, null, 4);
-            $("#timeline-content .sending").show("slow");
-            $("#timeline-content .sent").show();
-            $("#timeline-content .sent code.copy-target1").html(jsonStr);
+            $(".sending",  $timeline).show("slow");
+            $(".sent",  $timeline).show();
+            $(".sent code.copy-target1",  $timeline).html(jsonStr);
             $('.code-container pre code').each(function(i, e) {hljs.highlightBlock(e)});
-            $("#timeline-content .received").hide();
+            $(".received",  $timeline).hide();
             $(".loading-icon").show();
         }
     });
 
     request.done(function( msg ) {
         var jsonStr = JSON.stringify(msg, null, 4);
-        $("#timeline-content .received code.copy-target3").html(jsonStr);
+        $(".received code.copy-target3", $timeline).html(jsonStr);
         $('.code-container pre code').each(function(i, e) {hljs.highlightBlock(e)});
-        $("#timeline-content .received").show("slow");
-        $("#timeline-content .sending").hide();
+        $(".received", $timeline).show("slow");
+        $(".sending",  $timeline).hide();
 
         $(".loading-icon").hide();
         $('.nav-tabs a[href="#nav-rides"]').tab('show');
         $('.no-rides-msg').hide();
         $('.rides').show();
-        $('<div class="alert alert-success">' +
-            '<button type="button" class="close" data-dismiss="alert">' +
-            '&times;</button> You have successfully shared your ride.&nbsp;&nbsp; </div>').hide().appendTo('#response').fadeIn(300);
-
-        $(".app-home .alert").delay(3000).fadeOut( "normal", function(){
-            $(this).remove();
-        });
+        $('.action-response').show();
     });
 
     request.fail(function( jqXHR, textStatus ) {
@@ -68,6 +64,7 @@ function shareRide(){
 
 
 $(".share").on("click",function(){
+    $('.action-response').hide();
     shareRide();
 });
 

@@ -16,20 +16,21 @@
 
 /* Login page */
 
-.btn-primary {
-    color: #fc511f !important;
+.btn.btn-primary {
+    color: #fc511f;
 }
 
-.pickup-btn {
+.btn.btn-primary, .btn.btn-primary:active:hover, .btn.btn-primary:hover,
+.btn.btn-primary:not(:disabled):not(.disabled):active, .btn.btn-primary:focus {
+    color: #fc511f;
+}
+
+.btn.pickup-btn, .btn.pickup-btn:active:hover, .btn.pickup-btn:hover,
+.btn.pickup-btn:not(:disabled):not(.disabled):active, .btn.pickup-btn:focus {
+    color: #fff;
+    background: #fc511f;
     width: 100%;
-    background: #fc511f !important;
-    color: #fff !important;
     letter-spacing: 0.1rem;
-}
-
-a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
-    color: #fff !important;
-    background: #fc511f !important;
 }
 
 .app-icon {

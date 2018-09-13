@@ -16,25 +16,30 @@
 
 /* Login page */
 
-.btn-primary {
-    color: #fc511f !important;
+.btn.btn-primary {
+    background-color: #fc511f;
+    color: #fff;
 }
 
-.btn-outline-primary {
-    color: #fc511f !important;
-    border: 1px solid #fc511f !important;
+.btn.btn-primary, .btn.btn-primary:active:hover, .btn.btn-primary:hover,
+.btn.btn-primary:not(:disabled):not(.disabled):active, .btn.btn-primary:focus {
+    background-color: #fc511f;
+    color: #fff;
+}
+
+.btn.btn-outline-primary, .btn.btn-outline-primary:active:hover, .btn.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn.btn-outline-primary:focus {
+    color: #fc511f;
+    border: 1px solid #fc511f;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none
 }
 
 .pickup-btn {
     width: 100%;
-    background: #fc511f !important;
-    color: #fff !important;
     letter-spacing: 0.1rem;
-}
-
-a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
-    color: #fff !important;
-    background: #fc511f !important;
 }
 
 .app-icon {
@@ -122,6 +127,15 @@ a.pickup-btn:hover, a.pickup-btn:active, a.pickup-btn:focus {
 .pickup-route {
     color: #fc511f;
     font-size: 0.75rem
+}
+
+.action-response i {
+    color: #27ae60;
+}
+
+.action-text {
+    font-size: 0.9rem;
+    color: #444;
 }
 
 /* Profile page */
