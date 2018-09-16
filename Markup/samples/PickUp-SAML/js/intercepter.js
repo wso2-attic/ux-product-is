@@ -14,13 +14,44 @@
  ~   limitations under the License.
  */
 
+var validateTokenResponse= {
+    "exp":1464161608,
+    "username":"john@carbon.super",
+    "active":true,
+    "token_type":"Bearer",
+    "client_id":"rgfKVdnMQnJSSr_pKFTxj3apiwYa",
+    "iat":1464158008
+};
+
+var tokenResponse = {
+    "token_type":"Bearer",
+    "expires_in":3600,
+    "access_token":"fbc4e794-23db-3394-b1e5-f2c3e511d01f"
+};
+
+var apiResponse = {
+    "success":true,
+    "status_code": 200
+}
+
 $.mockjax({
-    url: "/restful/testbackend",
-    proxy: './mocks/shareData.json',
+    url: "/restful/getTokenbackend",
     status: 210,
     responseTime: 5000,
-    responseText: {
-        status: "success",
-    }
+    responseText: tokenResponse
+});
+
+$.mockjax({
+    url: "/restful/shareRideBackend",
+    status: 210,
+    responseTime: 5000,
+    responseText: apiResponse
+});
+
+$.mockjax({
+    url: "/restful/validateTokenBackend",
+    status: 210,
+    responseTime: 5000,
+    responseText: validateTokenResponse
 });
 

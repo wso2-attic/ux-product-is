@@ -21,6 +21,7 @@ $(document).ready(function () {
     $('.rides').hide();
 
     $('.book-btn').on('click', function(){
+        $("#timeline-content .event").hide();
         $('.nav-tabs a[href="#nav-rides"]').tab('show');
         $noRideMsg.hide();
         $('.rides').show();
