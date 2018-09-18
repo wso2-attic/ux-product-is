@@ -85,6 +85,10 @@ a.btn-login:hover, a.btn-login:active, a.btn-login:focus {
     color: #3f51b5 !important;
 }
 
+.dispatch .hljs-string, .dispatch .hljs-symbol, .dispatch .hljs-bullet {
+    color: #3f51b5;
+}
+
 /* Profile page */
 
 .btn-details {
