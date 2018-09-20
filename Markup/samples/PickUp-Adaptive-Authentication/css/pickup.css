@@ -16,7 +16,7 @@
 
 /* Login page */
 
-.btn.btn-primary {
+.btn.btn-book {
     background-color: #fc511f;
     color: #fff;
 }
@@ -40,10 +40,6 @@
 .pickup-btn {
     width: 100%;
     letter-spacing: 0.1rem;
-}
-
-.app-icon {
-    border: 0.25rem solid #d4dce4;
 }
 
 .app-icon > i {
@@ -89,8 +85,9 @@
     width: 100%;
 }
 
-.welcome-msg {
+.app-topic {
     letter-spacing: 0.1rem;
+    font-size:  1.125rem;
 }
 
 .driver-name {
@@ -148,6 +145,43 @@
 
 .event2-sent .request-response-infos, .event2-sending .request-response-infos, .event2-received .request-response-infos {
     padding-left: 1.5rem;
+}
+
+.ride-category {
+    display: block;
+    font-size:  1.125rem;
+    color: #777;
+    letter-spacing: 0.05rem;
+}
+
+.ride-description {
+    display: block;
+    font-size: 0.875rem;
+    color: #a8aeb5;
+    letter-spacing: 0.02rem;
+}
+
+.ride-amount {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.vehicle-img {
+    height: 4rem;
+}
+
+.select-vehicle .active .app-icon, .select-vehicle .app-icon:hover {
+    border: 0.25rem solid #999;
+}
+
+.book-btn {
+    background-color: #666;
+}
+
+.default-btn, .default-btn:hover {
+    color: #fc511f;
 }
 
 /* Profile page */

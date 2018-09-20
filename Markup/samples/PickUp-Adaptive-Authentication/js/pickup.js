@@ -17,22 +17,47 @@
 $(document).ready(function () {
 
     var $noRideMsg = $('.no-rides-msg');
+    var $vehicleContainer = $('.vehicle-select-container');
+    var $actionResponse = $('.action-response');
+    var $rides = $('.rides');
+    var $selectVehicle = $('.select');
+    var $continueBook = $('.continue');
+    var $bookContainer = $('.book-container');
 
-    $('.rides').hide();
+    $rides.hide();
 
     $('.book-btn').on('click', function(){
-        $("#timeline-content .event").hide();
+        $bookContainer.hide();
+        $vehicleContainer.show();
+        $continueBook.addClass('disabled');
+        $selectVehicle.removeClass('active');
+        $rides.hide();
+        $actionResponse.hide();
+        $noRideMsg.show();
+    });
+    
+    $continueBook.on('click', function(){
         $('.nav-tabs a[href="#nav-rides"]').tab('show');
         $noRideMsg.hide();
-        $('.rides').show();
-        $('.action-response').hide();
+        $rides.show();
+        $actionResponse.hide();
     });
 
+    $('#nav-book-tab').on('click', function(){
+        $vehicleContainer.hide();
+        $bookContainer.show();
+    });
+    
     $('.cancel').on('click', function(){
-        $('.rides').hide();
-        $('.action-response').hide();
+        $rides.hide();
+        $actionResponse.hide();
         $noRideMsg.show();
     });
 
+    $selectVehicle.click(function() {
+        $continueBook.removeClass('disabled');
+        $selectVehicle.removeClass('active');
+        $(this).addClass('active');
+    });
 });
 

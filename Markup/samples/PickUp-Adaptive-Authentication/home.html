@@ -90,21 +90,52 @@
                                 </div>
                             </nav>
                             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-book" role="tabpanel"
+                                <div class="tab-pane fade show active text-center" id="nav-book" role="tabpanel"
                                      aria-labelledby="nav-book-tab">
-                                    <div class="row">
-                                        <div class="col-sm-9 col-md-4 col-lg-4 mx-auto">
-                                            <div>
-                                                <img src="img/pickup-book.png" class="taxi-book mt-3">
+                                    <div class="book-container">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-md-4 col-lg-4 mx-auto">
+                                                <div>
+                                                    <img src="img/pickup-book.png" class="taxi-book mt-3">
+                                                </div>
+                                                <a class="btn btn-primary mt-3 pickup-btn book-btn text-center" href="#">
+                                                    Book a Taxi
+                                                </a>
                                             </div>
-                                            <a class="btn btn-primary mt-3 pickup-btn book-btn text-center" href="#">
-                                                Book a Taxi
-                                            </a>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="mt-5 welcome-msg">Select your Vehicle Type</div>
+                                    <div class="vehicle-select-container" style="display: none;">
+                                        <div class="row justify-content-md-center text-center select-vehicle">
+                                            <div class="col-md-12">
+                                                <div class="mt-4 mb-4 app-topic">Select your Vehicle Type</div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-4 mt-3">
+                                                <a href="#" class="select">
+                                                    <div class="app-icon d-block mx-auto mb-3">
+                                                        <img src="img/car-economy.png" class="vehicle-img">
+                                                    </div>
+                                                </a>
+                                                <span class="ride-category">On-demand Vehicles</span>
+                                                <span class="ride-description">Compact affordable rides</span>
+                                                <span class="ride-amount">$10</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-4 mt-3">
+                                                <a href="#" class="select">
+                                                    <div class="app-icon d-block mx-auto mb-3">
+                                                        <img src="img/car-day.png" class="vehicle-img">
+                                                    </div>
+                                                </a>
+                                                <span class="ride-category">All Day Hires</span>
+                                                <span  class="ride-description">Rentals for all day travel</span>
+                                                <span class="ride-amount">$100</span>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-md-center text-center">
+                                            <div class="col-md-4">
+                                                <a class="btn btn-primary mt-5 pickup-btn book-btn text-center continue" href="#">
+                                                    CONFIRM
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +147,7 @@
                                                 <i class="fas fa-info-circle"></i> Could not find any registered
                                                 rides.
                                             </div>
-                                            <div class="rides">
+                                            <div class="rides text-center">
                                                 <div class="row mb-3">
                                                     <div class="col-md-3 text-md-right mt-1 mt-md-3">
                                                         <img src="img/driver.png" class="driver mt-3">
@@ -126,7 +157,8 @@
                                                         <div class="driver-vehicle text-secondary">CAS 234</div>
                                                     </div>
                                                     <div class="col-md-6 mt-md-5 ">
-                                                        <button type="button" class="btn btn-outline-primary share">
+                                                        <button type="button" class="btn btn-outline-primary share" role="button" aria-expanded="false"
+                                                        data-toggle="modal" data-target="#sampleModal" href="#">
                                                             Share my ride
                                                         </button>
                                                         <button type="button" class="btn btn-outline-secondary cancel">
@@ -138,11 +170,11 @@
                                                     <div class="col-md-12 d-block mx-auto text-center">
                                                         <div class="action-response success" class="mt-2">
                                                             <i class="fas fa-2x fa-check"></i> <span class="action-text">
-                                                             You have successfully shared your ride.</span>
+                                                             You have successfully booked your ride.</span>
                                                         </div>
                                                         <div class="action-response error" class="mt-2">
                                                             <i class="fas fa-2x fa-times"></i> <span class="action-text">
-                                                             Error occurred while sharing your ride</span>
+                                                             Error occurred while booking your ride</span>
                                                         </div>
                                                         <div class="loading-icon fa-3x text-center"><i
                                                                 class="fas fa-spinner fa-spin"></i></div>
@@ -267,7 +299,7 @@
                     <p>Sample application functionalities are added for display purposes only.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn default-btn" data-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
@@ -294,53 +326,9 @@
                 <div class="col-md-12">
                     <div id="timeline-content">
                         <ul class="timeline">
-                            <li class="event sent event1-sent" style="display: none;">
+                            <li class="event sent">
                                 <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Get Token Request <span class="float-right"><i
-                                            class="fas fa-angle-down"></i></span></h1>
-                                    <div class="request-response-details mt-3">
-                                        <h2>cURL:</h2>
-                                        <div class="code-container mb-3">
-                                            <button class="btn btn-primary btn-clipboard"
-                                                    data-clipboard-target=".copy-target1"><i
-                                                    class="fa fa-clipboard"></i></button>
-                                            <p class="copied">Copied..!</p>
-                                            <pre><code class="copy-target1 JSON pt-3 pb-3"> Request data </code></pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="event sending event1-sending" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Sending...
-                                        <div class="spinner">
-                                            <div class="bounce1"></div>
-                                            <div class="bounce2"></div>
-                                            <div class="bounce3"></div>
-                                        </div>
-                                    </h1>
-                                </div>
-                            </li>
-                            <li class="event received event1-received" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Get Token Response <span class="float-right"><i
-                                            class="fa fa-angle-down"></i></span></h1>
-                                    <div class="request-response-details mt-3">
-                                        <h2>Data:</h2>
-                                        <div class="code-container mb-3">
-                                            <button class="btn btn-primary btn-clipboard"
-                                                    data-clipboard-target=".copy-target3"><i
-                                                    class="fa fa-clipboard"></i></button>
-                                            <p class="copied">Copied..!</p>
-                                            <pre><code class="copy-target3 JSON pt-3 pb-3"> Response data </code></pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="event sent event3-sent" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>API Request <span class="float-right"><i
+                                    <h1 class='request-response-title'>Request <span class="float-right"><i
                                             class="fas fa-angle-down"></i></span></h1>
                                     <div class="request-response-details mt-3">
                                         <h2>Data:</h2>
@@ -354,64 +342,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="event sending event3-sending" style="display: none;">
+                            <li class="event received">
                                 <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Sending...
-                                        <div class="spinner">
-                                            <div class="bounce1"></div>
-                                            <div class="bounce2"></div>
-                                            <div class="bounce3"></div>
-                                        </div>
-                                    </h1>
-                                </div>
-                            </li>
-
-                            <li class="event sent event2-sent" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Validate Token Request <span class="float-right"><i
-                                            class="fas fa-angle-down"></i></span></h1>
-                                    <div class="request-response-details mt-3">
-                                        <h2>cURL:</h2>
-                                        <div class="code-container mb-3">
-                                            <button class="btn btn-primary btn-clipboard"
-                                                    data-clipboard-target=".copy-target1"><i
-                                                    class="fa fa-clipboard"></i></button>
-                                            <p class="copied">Copied..!</p>
-                                            <pre><code class="copy-target1 JSON pt-3 pb-3"> Request data </code></pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="event sending event2-sending" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Sending...
-                                        <div class="spinner">
-                                            <div class="bounce1"></div>
-                                            <div class="bounce2"></div>
-                                            <div class="bounce3"></div>
-                                        </div>
-                                    </h1>
-                                </div>
-                            </li>
-                            <li class="event received event2-received" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>Validate Token Response <span class="float-right"><i
-                                            class="fa fa-angle-down"></i></span></h1>
-                                    <div class="request-response-details mt-3">
-                                        <h2>Data:</h2>
-                                        <div class="code-container mb-3">
-                                            <button class="btn btn-primary btn-clipboard"
-                                                    data-clipboard-target=".copy-target3"><i
-                                                    class="fa fa-clipboard"></i></button>
-                                            <p class="copied">Copied..!</p>
-                                            <pre><code class="copy-target3 JSON pt-3 pb-3"> Response data </code></pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="event received event3-received" style="display: none;">
-                                <div class="request-response-infos">
-                                    <h1 class='request-response-title'>API Response <span class="float-right"><i
+                                    <h1 class='request-response-title'>Response <span class="float-right"><i
                                             class="fa fa-angle-down"></i></span></h1>
                                     <div class="request-response-details mt-3">
                                         <h2>Data:</h2>
